@@ -9,9 +9,6 @@ function App() {
   return (
     <div className="App">
       <h1>ENSF-381: Full Stack Web Development</h1>
-      <p>React Components</p>
-      <p>{currentYear}</p>
-      <p>{isLoggedIn ? <p>Welcome, user!</p> : <p>Please log in</p>} </p>
       <EngineeringTopics />
     </div>
   );

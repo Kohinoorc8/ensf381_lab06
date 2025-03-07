@@ -10,21 +10,23 @@ function EngineeringTopics() {
         {title: "Chemical Engineering", description: "Advancing processes for a sustainable future."}
         ];
     
-    const topiclist = topics.map(function (topic, index) {
+    const topiclist = topics.map(function (topic) {
         return (
-            <li key={index}>
+            <div>
                 <h3>{topic.title}</h3>
                 <p>{topic.description}</p>
-            </li>
-        )
+            </div>
+            
+            
+        );
     });
    
     return (
         <div>
             <h2>Engineering Topics</h2>
-            <ul>
-                {topiclist}
-            </ul>
+
+            <p>{topiclist}</p>
+    
         </div>
     );
 }
